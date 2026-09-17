@@ -1,6 +1,0 @@
-PySide6
-av
-opencv-python
-numpy
-pyinstaller
-

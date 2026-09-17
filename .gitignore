@@ -1,23 +1,7 @@
-# Не заливать на GitHub. «/» в начале — только в корне папки.
-
-# Личное: настройки Claude Code и скрипт заливки.
-/.claude/settings.local.json
-/upload.bat
-
-# Сборка PyInstaller и кэш Python.
-/build/
-/dist/
-__pycache__/
-*.pyc
-
-# ffmpeg.exe и ffprobe.exe больше 100 МБ — GitHub такие файлы не принимает (в коде и сборке не упоминаются).
-/ffmpeg.exe
-/ffprobe.exe
-
-# Тестовые видео, результаты экспорта, скриншоты.
-/*.mp4
-/*.mov
-/atlas.png
-/atlas.json
-/char.json
-/shot_*.png
+# Репозиторий — только для дистрибутива: исходный код НЕ заливается.
+# Игнорируется всё, кроме перечисленного ниже. AtlasConverter.exe больше 100 МБ —
+# в git его не положить, он выкладывается в GitHub Releases.
+/*
+!/.gitignore
+!/.gitattributes
+!/LICENSE
